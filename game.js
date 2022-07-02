@@ -222,7 +222,7 @@ function getRandomNUmber(){
           snakePos.push(snakePos[snakePos.length-1])
           score++
           counter++}
-          speed += 0.5
+          speed += 0.2
           
   } 
 
