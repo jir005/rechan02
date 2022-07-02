@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+    <link rel="stylesheet" href="game.css" id="_game">
+    
+</head>
+
+<body>
+
+       <div class="title" id="_title"></div>
+
+       <div class="gameOver"  id="_over">
+          <h class="theText">game over</h>
+          <h class="score" id="_score"> : </h>
+          <input  type="submit" value="restart" onclick="action()"  id="_restart" class="restart">
+       
+        </div>
+        <div class="board" id="_board"></div>
+
+        <div class="buttons" id="_buttons">
+             <input type="submit" value="^" class="down2" onclick="up()" >
+        </div>
+    
+        <div class="buttons2" id="_buttons1">
+          <input type="submit" value="<" class="up" onclick="left()" >
+          <input type="submit" value=">" class="up" onclick="right()">
+     </div>
+     <div class="buttons3" id="_buttons2">
+          
+          <input type="submit" value="v" class="down2" onclick="down()">
+     </div>
+
+     <div class="FUCK" id="_meseege">
+          <h class="ttext"><span>Creat.. </span> Now you have to answer the follwoing questions <br>
+          to to get your gift <span>(if you had a wrong answer you have restart game)</span></h>
+      
+         <input type="submit" class="go" value="GO" onclick="action0()">
+          
+      </div>
+
+     
+</body>
+<script src="game.js" ></script>
+</html>

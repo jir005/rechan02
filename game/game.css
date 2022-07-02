@@ -1,0 +1,183 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    
+   
+  
+  
+  }
+
+
+.board{
+    background-color: rgb(26, 26, 26);
+    width: 80vmin;
+    height: 80vmin;
+    
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30 , 1fr);
+}
+.board1{
+  background-color: rgb(131, 131, 131);
+  width: 80vmin;
+  height: 80vmin;
+  
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30 , 1fr);
+}
+
+.snake{
+    /* background:#ff002b;
+    box-shadow: -10px 10px 90px #f70b46,
+                   0 0 12px #f32256     ; */
+    background-color: white;           
+    border:  black ;
+    border-radius: 0;
+                
+
+}
+.food{
+    /* background:#00f214;
+    box-shadow: -10px 10px 90px #11fd09 ,
+                   0 0 12px #1af113     ; */
+    background-color: white;            
+    border: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+
+/*the gam over part */
+.gameOver{
+    
+    
+    background-color:  rgb(26, 26, 26);
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .theText{
+    color: white;
+    
+                   ;
+    font-size: 1.8em;
+    
+  }
+  .restart{
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0);
+        
+  }
+  .restart:hover{
+    box-shadow:  0 0 10px rgb(221, 221, 221),
+    0 0 20px rgb(199, 199, 199),
+    0 0 80px rgb(182, 182, 182)
+                   ;
+    background-color: rgb(194, 194, 194);
+    color: black;
+  }
+  .score{
+    color: white;
+   
+    font-size: 1.4em;
+  
+  }
+  /* ---------------------------------*/
+
+
+.gameXP{
+    color: white;
+ 
+}
+.theScore{
+    color: white;
+    
+    background-color: white;
+    margin-bottom: 1100%;
+    
+    
+}
+
+.title{
+
+    color: white;
+    font-size: 1.1em;
+    
+}
+.doubleFood{
+  background-color: white;
+  box-shadow:  0 0 10px rgb(221, 221, 221),
+  0 0 20px rgb(199, 199, 199),
+  0 0 80px rgb(182, 182, 182)
+                 ;      
+  border: none;
+  border-radius: 10px;
+}
+/*  buttons*/
+.buttons{
+ 
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+    
+}
+.up{
+  margin-bottom:0em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0.7em;
+  width:3em;
+  background-color: white;
+  border: none;
+  color: black;
+  transition: 0.3s;
+  width: 4em;
+
+}
+
+.up:hover{
+  box-shadow: -10px 10px 90px #ea00f2 ,
+                 0 0 12px #ea00f2    ;
+}
+.down:hover{
+  box-shadow: -10px 10px 90px #ea00f2 ,
+                 0 0 12px #ea00f2    ;
+}
+/*         */
+.down2{
+  margin-bottom: 0em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding: 1em;
+  width:3em;
+  background-color: white;
+  border: none;
+  color: black;
+  transition: 0.3s;
+}
+.down2:hover{
+  box-shadow: -10px 10px 90px #ea00f2 ,
+  0 0 12px #ea00f2    ;
+}
+
+.buttons2{
+  display: flex;
+  flex-direction: row;
+
+}
